@@ -208,7 +208,11 @@ def big_shoe_rebounds()
 end 
 
 def most_points_scored
-  
+  most_points = 0 
+  p_with_most_points = ''
+  game_hash.each do 
+    
+  end 
 end 
 
 
