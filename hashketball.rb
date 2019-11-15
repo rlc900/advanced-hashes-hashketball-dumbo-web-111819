@@ -158,6 +158,14 @@ def team_names
   end 
 end 
 
+def player_numbers(team_name)
+  game.hash.map do |location, team|
+    if [:team_name] == team_name
+      binding.pry
+    end 
+  end 
+end 
+
 
 
 
