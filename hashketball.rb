@@ -180,6 +180,7 @@ def player_stats(players_name)
     team.each do |attributes, data|
       if attributes == :players 
         binding.pry
+      end
     end 
   end 
 end 
