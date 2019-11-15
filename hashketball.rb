@@ -255,7 +255,7 @@ def long_name_steals_a_ton?
   most_steals = 0 
   steals = ''
   game_hash.each do |location, team|
-    team[:players].each do |players|
+    team[:players].each do |player|
       steals, most_steals = player[:player_name], player[:steals] if player[:steals] > most_steals 
     end 
   end 
