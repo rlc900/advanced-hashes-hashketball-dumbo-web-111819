@@ -1,3 +1,5 @@
+require 'pry'
+
 def game_hash 
   {
     :home => { :team_name => "Brooklyn Nets",
@@ -113,7 +115,12 @@ def game_hash
   } 
 end 
 
-
+def num_points_scored(players_name)
+  #return number of points of player passed in 
+  game_hash.each do |location, team|
+    binding.pry
+  end
+end 
 
 
 
