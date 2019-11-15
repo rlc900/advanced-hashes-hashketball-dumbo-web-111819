@@ -217,13 +217,26 @@ def most_points_scored
     if points > most_points 
       most_points = points  
     p_with_most_points = player[:player_name]
-   # binding.pry
+  
     end 
    end 
   end 
   p_with_most_points
 end 
 
-
+def winning_team 
+  total_p = 0 
+  champions = ''
+  game_hash.each do |location, team|
+    team points = 0 
+    name_of_team = game_hash[location][:team_name]
+    team[:players].each do |player|
+      points = player[:points]
+      team_points += points 
+      if team_points > total_p
+      champions
+    end 
+  end 
+end 
 
 
