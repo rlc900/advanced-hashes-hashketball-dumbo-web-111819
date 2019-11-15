@@ -239,4 +239,16 @@ def winning_team
   return champions
 end 
 
+def player_with_longest_name
+  longest_name = ''
+  longest_n_length = 0
+  game_hash.each do |location, team|
+    team[:players] do |player|
+      name_length = player[:player_name].length 
+      longest_name, longest_n_length = player[:player_name], name_length if name_length > longest_n_length
+    end 
+  end
+  longest_name
+end 
+
 
