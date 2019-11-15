@@ -234,7 +234,7 @@ def winning_team
       points = player[:points]
       team_points += points 
     end 
-     champions, total_p = name_of_team, team_points if team_points> total_p
+     champions, total_p = name_of_team, team_points if team_points > total_p
   end 
   return champions
 end 
