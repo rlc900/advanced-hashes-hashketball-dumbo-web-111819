@@ -233,9 +233,7 @@ def winning_team
     team[:players].each do |player|
       points = player[:points]
       team_points += points 
-      if team_points > total_p
-      champions, total_p = name_of_team, team_points
-    end
+    champions, total_p = name_of_team, team_points if team_points> total_p
     end 
   end 
   return champions
