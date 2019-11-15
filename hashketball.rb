@@ -228,6 +228,7 @@ def winning_team
   total_p = 0 
   champions = ''
   game_hash.each do |location, team|
+    binding.pry
     team points = 0 
     name_of_team = game_hash[location][:team_name]
     team[:players].each do |player|
