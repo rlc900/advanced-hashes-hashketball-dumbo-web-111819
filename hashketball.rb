@@ -210,9 +210,15 @@ end
 def most_points_scored
   most_points = 0 
   p_with_most_points = ''
-  game_hash.each do 
-    
+  game_hash.each do |location, team|
+    team[:players].each do |player|
+    points = player[:points]
+    if points > most_points 
+      p_with_most_points = player[:player_name]
+    end 
+   end 
   end 
+  p_with_most_points
 end 
 
 
