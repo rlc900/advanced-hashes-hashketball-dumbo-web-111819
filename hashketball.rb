@@ -179,7 +179,7 @@ def player_stats(players_name)
   game_hash.each do |location, team|
     team.each do |attributes, data|
       if attributes == :players 
-        
+        binding.pry
     end 
   end 
 end 
